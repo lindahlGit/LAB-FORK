@@ -1,51 +1,57 @@
 <!DOCTYPE HTML>
 <html lang="en">
-   <head>
-       <title>BurgerFinder</title>
-       <meta charset="utf-8"/>
-       <link rel="stylesheet" href="public/css/burger.css">
-   </head>
-   <body>
-        <h1>Välkommen till BurgerOnline</h1>
+
+<head>
+    <title>BurgerFinder</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="public/css/burger.css">
+</head>
+
+<body>
+    <section class="welcome">
+        <img src="public/img/headerimage.webp" alt="headerimage">
+        <h1 class="headline">Välkommen till BurgerOnline</h1>
         <h3>Välj hamburgare</h3>
         <p> Detta är där du exikverar ditt hamburgarval</p>
-        <section class="burgers">
-            <article class="burger">
-                <h3>Eldburgaren</h3>
-                <img src="public/img/fireburger.jpeg" alt="Eldburgaren">
-                <ul>
-                    <li>750 kCal</li>
-                    <li>Innehåller laktos</li>
-                    <li>Innehåller gluten</li>
-                </ul>
-            </article>
+    </section>
+    <section class="burgers">
+        <article class="burger">
+            <h3>Eldburgaren</h3>
+            <img src="public/img/fireburger.jpeg" alt="Eldburgaren">
+            <ul>
+                <li>750 kCal</li>
+                <li class="allergies">Innehåller <span id="lactose"> laktos</span></li>
+                <li>Innehåller gluten</li>
+            </ul>
+        </article>
 
-            <article class="burger">
-                <h3>Kalkonburgare</h3>
-                <img src="public/img/turkeyburger.jpeg" alt="Kalkonburgaren">
-                <ul>
-                    <li>600 kCal</li>
-                    <li>Innehåller laktos</li>
-                    <li>Glutenfri</li>
-                </ul>
-            </article>
+        <article class="burger">
+            <h3>Kalkonburgare</h3>
+            <img src="public/img/turkeyburger.jpeg" alt="Kalkonburgaren">
+            <ul>
+                <li>600 kCal</li>
+                <li class="allergies">Innehåller <span id="lactose"> laktos</span></li>
+                <li>Glutenfri</li>
+            </ul>
+        </article>
 
-            <article class="burger">
-                <h3> En Dubbel med Ost</h3>
-                <img src="public/img/doublecheese.jpeg" alt="Dubbel+Ost">
-                <ul>
-                    <li>1800 kCal</li>
-                    <li>Innehåller laktos</li>
-                    <li>Innehåller gluten</li>
-                </ul>
-            </article>
-        </section>
+        <article class="burger">
+            <h3> En Dubbel med Ost</h3>
+            <img src="public/img/doublecheese.jpeg" alt="Dubbel+Ost">
+            <ul>
+                <li>1800 kCal</li>
+                <li class="allergies">Innehåller <span id="lactose"> laktos</span></li>
+                <li>Innehåller gluten</li>
+            </ul>
+        </article>
+    </section>
+    <section class="forms">
         <h3>Kundinformation</h3>
         <p>Detta är där man får relevant information</p>
         <h4>Beställningsinformation:</h4>
         <form>
             <label for="fullname">Namn</label>
-            <input type="text" id="fullname" name="fullname" placeholder="För- och efternamn">
+            <input type="text" id="fullname" placeholder="För- och efternamn">
 
             <label for="email">E-mail</label>
             <input type="email" id="email" placeholder="E-mailadress">
@@ -70,13 +76,16 @@
             <label><input type="radio" name="gender" value="woman"> Kvinna</label>
             <label><input type="radio" name="gender" value="nonbi"> Icke-binär</label>
             <label><input type="radio" name="gender" value="other"> Annat</label>
-            
+
         </form>
+
         <button type="submit">Skicka beställning!</button>
+    </section>
 
-        <footer>
-            <p>© 2026 Burgers</p>
-        </footer>
+    <footer>
+        <p>© 2026 Burgers</p>
+    </footer>
 
-   </body>
+</body>
+
 </html>
