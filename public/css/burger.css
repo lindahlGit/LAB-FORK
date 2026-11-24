@@ -21,14 +21,14 @@
 }
 
 .burgers {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     border: 5px dashed orange;
     border-radius: 5px;
 }
 
 .burger {
-    flex: 1;
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 16px;
@@ -75,6 +75,12 @@ body {
 
 #lactose {
     text-transform: uppercase;
+}
+
+#gluten {
+    text-transform: uppercase;
+    text-decoration: underline dashed;
+    text-decoration-color: antiquewhite;
 }
 
 button {
